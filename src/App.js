@@ -68,6 +68,7 @@ const FormComponent = () => {
       <button onClick={handleSubmit} className="w-full bg-indigo-500 text-white text-sm font-bold py-2 px-4 rounded-md hover:bg-indigo-600 transition duration-300" type="submit">
         Add User
       </button>
+      <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
     </div>
   )
 }
@@ -81,7 +82,6 @@ function App() {
           <Route path="/home" element={<HomePage />} />
         </Routes>
       </BrowserRouter>
-      <ToastContainer position="top-center" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light" />
     </>
   )
 }
