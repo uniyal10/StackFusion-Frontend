@@ -10,7 +10,7 @@ const get_all_forms = async () => {
     redirect: "follow"
   }
 
-  return await (await fetch("http://localhost:8080/api/get-users", requestOptions)).json()
+  return await (await fetch(process.env.REACT_APP_URL + "/api/get-users", requestOptions)).json()
 }
 
 const HomePage = () => {
